@@ -1,0 +1,47 @@
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 140vh;
+    display: grid;
+    place-items: center;
+    perspective: 1000px;
+}
+article {
+    div {
+        background: hotpink;
+        width: 350px;
+        height: 600px;
+        border-radius: 2rem;
+        display: grid;
+        place-items: center;
+        transform-origin: preserve-3d;
+        perspective: 1000px;
+        transition: 2s;
+
+        img {
+            width: 80%;
+        }
+        h1 {
+            color: #525252;
+            translate: 0 -65px;
+        }
+    }
+}
+
+figure {
+    display: block;
+    align-items: center;
+  
+    figcaption a {
+      color: #525252;
+      text-decoration: none;
+      margin-left: .5rem;
+      font-size: 1.2rem;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+      &:active {
+        font-size: 1rem;
+      }
+    }
+  }
